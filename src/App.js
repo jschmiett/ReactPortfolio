@@ -1,9 +1,9 @@
 import React from "react";
-import HelloReact from './components/HelloReact';
+import Portfolio from './components/Portfolio';
 
 function App() {
     console.log("Hello World");
-    return <HelloReact />;
+    return <Portfolio />;
 }
 
 export default App;

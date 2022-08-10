@@ -7,3 +7,11 @@ const projectInfo = {
     link: 'link',
     gitHubRepository: 'gitHubRepo',
 }
+
+export default function Portfolio() {
+    return (
+        <div>
+            <Project name={projectInfo.title} />
+        </div>
+    );
+}
