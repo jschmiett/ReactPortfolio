@@ -6,7 +6,6 @@ export default function Header({ currentPage, setCurrentPage }) {
     return (
         <div>
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-            <h1>Jennifer Schmiett</h1>
         </div>
     )
 }
