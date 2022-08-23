@@ -93,30 +93,36 @@ export default function Form() {
         <>
             <div>
                 <form className='form'>
-                    <input
-                        value={name}
-                        name="name"
-                        onChange={handleInputChange}
-                        type="text"
-                        placeholder='name'
-                        onBlur={nameInputCheck}
-                    />
-                    <input
-                        value={email}
-                        name="email"
-                        onChange={handleInputChange}
-                        type="email"
-                        placeholder='email'
-                        onBlur={emailInputCheck}
-                    />
-                    <input
-                        value={message}
-                        name="message"
-                        onChange={handleInputChange}
-                        type="message"
-                        placeholder='message'
-                        onBlur={messageInputCheck}
-                    />
+                    <div>
+                        <input
+                            value={name}
+                            name="name"
+                            onChange={handleInputChange}
+                            type="text"
+                            placeholder='name'
+                            onBlur={nameInputCheck}
+                        />
+                    </div>
+                    <div>
+                        <input
+                            value={email}
+                            name="email"
+                            onChange={handleInputChange}
+                            type="email"
+                            placeholder='email'
+                            onBlur={emailInputCheck}
+                        />
+                    </div>
+                    <div>
+                        <input
+                            value={message}
+                            name="message"
+                            onChange={handleInputChange}
+                            type="message"
+                            placeholder='message'
+                            onBlur={messageInputCheck}
+                        />
+                    </div>
                     <button type='button' onClick={handleFormSubmit}>Submit</button>
                 </form>
                 {errorMessage && (
