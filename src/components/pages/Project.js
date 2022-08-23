@@ -6,7 +6,9 @@ export default function Project(props) {
             <div className="card">
                 <div className="card-body">
                     <h5 className="card-title">Name: {props.name}</h5>
-                    <image className="image" src={props.image}></image>
+                    <div>
+                        <image className="image" src={props.image}></image>
+                    </div>
                     <div>
                         <a href={props.link}>View my project</a>
                     </div>
