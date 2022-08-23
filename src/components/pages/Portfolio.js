@@ -4,14 +4,14 @@ import Project from './Project';
 const projectInfo = [{
     title: 'Classifieds',
     image: 'image',
-    link: 'https://github.com/jsardinas/laughing-broccoli',
-    gitHubRepository: 'https://theclassifieds.herokuapp.com/',
+    gitHubRepository: 'https://github.com/jsardinas/laughing-broccoli',
+    link: 'https://theclassifieds.herokuapp.com/',
 },
 {
     title: 'BiblioTecha',
     image: 'image',
-    link: 'https://github.com/jesusoyer/Bibliotecha-',
-    gitHubRepository: 'https://arcane-harbor-36381.herokuapp.com/',
+    gitHubRepository: 'https://github.com/jesusoyer/Bibliotecha-',
+    link: 'https://arcane-harbor-36381.herokuapp.com/',
 },
 {
     title: 'title3',

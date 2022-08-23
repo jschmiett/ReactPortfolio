@@ -59,38 +59,78 @@ export default function Form() {
 
     };
 
+    const nameInputCheck = (e) => {
+        //preventing the default behavior of the form submit (which is to refresh the page)
+        e.preventDefault();
+        // Send error message if cursor moves away and input is empty 
+        if (!name) {
+            setErrorMessage('Please enter your name');
+            return;
+        }
+    };
+
+    const emailInputCheck = (e) => {
+        //preventing the default behavior of the form submit (which is to refresh the page)
+        e.preventDefault();
+        // Send error message if cursor moves away and input is empty 
+        if (!email) {
+            setErrorMessage('Please enter your email');
+            return;
+        }
+    };
+
+    const messageInputCheck = (e) => {
+        //preventing the default behavior of the form submit (which is to refresh the page)
+        e.preventDefault();
+        // Send error message if cursor moves away and input is empty 
+        if (!email) {
+            setErrorMessage('Please enter your message');
+            return;
+        }
+    };
+
     return (
-        <div>
-            <form className='form'>
-                <input
-                    value={name}
-                    name="name"
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder='name'
-                />
-                <input
-                    value={email}
-                    name="email"
-                    onChange={handleInputChange}
-                    type="email"
-                    placeholder='email'
-                />
-                <input
-                    value={message}
-                    name="message"
-                    onChange={handleInputChange}
-                    type="message"
-                    placeholder='message'
-                />
-                <button type='button' onClick={handleFormSubmit}>Submit</button>
-            </form>
-            {errorMessage && (
-                <div>
-                    <p className='error-text'>{errorMessage}</p>
-                </div>
-            )}
-        </div>
+        <>
+            <div>
+                <form className='form'>
+                    <input
+                        value={name}
+                        name="name"
+                        onChange={handleInputChange}
+                        type="text"
+                        placeholder='name'
+                        onBlur={nameInputCheck}
+                    />
+                    <input
+                        value={email}
+                        name="email"
+                        onChange={handleInputChange}
+                        type="email"
+                        placeholder='email'
+                        onBlur={emailInputCheck}
+                    />
+                    <input
+                        value={message}
+                        name="message"
+                        onChange={handleInputChange}
+                        type="message"
+                        placeholder='message'
+                        onBlur={messageInputCheck}
+                    />
+                    <button type='button' onClick={handleFormSubmit}>Submit</button>
+                </form>
+                {errorMessage && (
+                    <div>
+                        <p className='error-text'>{errorMessage}</p>
+                    </div>
+                )}
+            </div>
+            <div>
+                <a href='https://docs.google.com/document/d/e/2PACX-1vSk3_tTsAxCAeS3ToSq_2aAUY9iQwRFXtiRUaFxU__-tqwBnBVLkWl9UudG4zbsrEwFJPFqhkI_CAOM/pub'>View my Resume on Google Docs</a>
+            </div>
+        </>
+
+
     );
 
 }
