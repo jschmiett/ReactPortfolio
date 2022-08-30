@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <div>
-                <img src="./public/profilePicture.jpg" style={{ width: 300, height: 300 }}></img>
+                <img src="./profilePicture.jpg" style={{ width: 300, height: 300 }}></img>
             </div>
             <div>
                 <h2>About Me</h2>

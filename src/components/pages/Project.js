@@ -7,7 +7,7 @@ export default function Project(props) {
                 <div className="card-body">
                     <h5 className="card-title">{props.name}</h5>
                     <div>
-                        <image className="image" src={props.image}></image>
+                        <img className="image" src={props.image} />
                     </div>
                     <div>
                         <a href={props.link}>View my project</a>
